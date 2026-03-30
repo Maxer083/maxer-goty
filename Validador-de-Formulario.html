@@ -1,0 +1,37 @@
+<script>
+  const inputNom = document.getElementById('nombre');
+  const btnVal = document.getElementById('validar');
+  const txtError = document.getElementById('error');
+
+  btnVal.addEventListener('click', () => {
+    if (inputNom.value.trim() === "") {
+      txtError.textContent = "Por favor, escribe un nombre.";
+    } else {
+      txtError.textContent = "";
+      alert("¡Formulario enviado!");
+    }
+  });
+</script>
+
+<style>
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100vw;
+  }
+  button {
+    background-color: #282aa7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: center;
+  }
+</style>

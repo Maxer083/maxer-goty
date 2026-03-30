@@ -1,0 +1,41 @@
+<input type="text" id="tareaInput" placeholder="Nueva tarea">
+<button id="addBtn">Agregar</button>
+<ul id="lista"></ul>
+
+<script>
+  const input = document.getElementById('tareaInput');
+  const lista = document.getElementById('lista');
+  const btnAdd = document.getElementById('addBtn');
+
+  btnAdd.addEventListener('click', () => {
+    if (input.value !== "") {
+      const nuevaTarea = document.createElement('li');
+      nuevaTarea.textContent = input.value;
+      lista.appendChild(nuevaTarea);
+      input.value = ""; // Limpiar input
+    }
+  });
+</script>
+
+<style>
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100vw;
+  }
+  button {
+    background-color: #282aa7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: center;
+  }
+</style>
