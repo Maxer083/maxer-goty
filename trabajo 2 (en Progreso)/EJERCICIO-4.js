@@ -3,17 +3,17 @@
 //El array de letras es:
 //var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 function EJERCICIO4(params) {
-    var numeroDNI = parseInt(prompt("Introduce tu número de DNI (sin letra):"));
-var letraUsuario = prompt("Introduce la letra de tu DNI (en mayúscula):");
+    let numeroDNI = parseInt(prompt("Introduce tu número de DNI (sin letra):"));
+let letraUsuario = prompt("Introduce la letra de tu DNI (en mayúscula):");
 
-var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
 if (numeroDNI < 0 || numeroDNI > 99999999) {
     alert("ese número no es válido");
 } else {
 
-    var restoDLD = numeroDNI % 23;  //DLD (De La Division)
-    var letraCorrecta = letras[restoDLD];
+    let restoDLD = numeroDNI % 23;  //DLD (De La Division)
+    let letraCorrecta = letras[restoDLD];
 
     if (letraCorrecta !== letraUsuario.toUpperCase()) {
         alert("La letra que ha indicado no es correcta");

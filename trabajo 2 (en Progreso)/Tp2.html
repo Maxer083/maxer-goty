@@ -8,25 +8,18 @@
 <body>
     <h2>EJERCICIO 1</h2>
     <h3>
-Crear un array llamado meses y que almacene el nombre de los doce meses del año.
-Mostrar por pantalla los doce nombres utilizando la función console.log().</h3>
+Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar por pantalla los doce nombres utilizando la función console.log().</h3>
     <button onclick="EJERCICIO1()">Ejercicio 1 </button>
     <script src="EJERCICIO-1.js"></script>
 <h2>EJERCICIO 2</h2>
     <h3>
-A partir del siguiente array que se proporciona: var valores = [true, 5, false, "hola", "adios",
-2];
-Determinar cual de los dos elementos de texto es mayor
-Utilizando exclusivamente los dos valores booleanos del array, determinar los operadores
-necesarios para obtener un resultado true y otro resultado false
-Determinar el resultado de las cinco operaciones matemáticas realizadas con los dos
-elementos numéricos</h3>
+A partir del siguiente array que se proporciona: var valores = [true, 5, false, "hola", "adios", 2];
+Determinar cual de los dos elementos de texto es mayor utilizando exclusivamente los dos valores booleanos del array, determinar los operadores necesarios para obtener un resultado true y otro resultado false determinar el resultado de las cinco operaciones matemáticas realizadas con los dos elementos numéricos</h3>
     <button onclick="EJERCICIO2()">Ejercicio 2 </button>
     <script src="EJERCICIO-2.js"></script>
 <h2>EJERCICIO 3</h2>
     <h3>
-Completar las condiciones de los if del siguiente script para que los mensajes se muestren
-siempre de forma correcta:
+Completar las condiciones de los if del siguiente script para que los mensajes se muestren siempre de forma correcta:
 var numero1 = 5;
 var numero2 = 8;
 if(...) {
@@ -56,27 +49,53 @@ var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', '
 
 Por tanto si el resto de la división es 0, la letra del DNI es la T y si el resto es 3 la letra es la
 A. Con estos datos, elaborar un pequeño script que:
-Almacene en una variable el número de DNI indicado por el usuario y en otra variable la
-letra del DNI que se ha indicado.
-En primer lugar (y en una sola instrucción) se debe comprobar si el número es menor que 0
-o mayor que 99999999. Si ese es el caso, se muestra un mensaje al usuario indicando que
-el número proporcionado no es válido y el programa no muestra más mensajes.
+Almacene en una variable el número de DNI indicado por el usuario y en otra variable la letra del DNI que se ha indicado.
+En primer lugar (y en una sola instrucción) se debe comprobar si el número es menor que 0 o mayor que 99999999. Si ese es el caso, se muestra un mensaje al usuario indicando que el número proporcionado no es válido y el programa no muestra más mensajes.
 Si el número es válido, se calcula la letra que le corresponde según el método explicado
 anteriormente.
-Una vez calculada la letra, se debe comparar con la letra indicada por el usuario. Si no
-coinciden, se muestra un mensaje al usuario diciéndole que la letra que ha indicado no es
-correcta. En otro caso, se muestra un mensaje indicando que el número y la letra de DNI
-son correctos.</h3>
+Una vez calculada la letra, se debe comparar con la letra indicada por el usuario. Si no coinciden, se muestra un mensaje al usuario diciéndole que la letra que ha indicado no es correcta. En otro caso, se muestra un mensaje indicando que el número y la letra de DNI son correctos.</h3>
     <button onclick="EJERCICIO4()">Ejercicio 4 </button>
     <script src="EJERCICIO-4.js"></script>
 
     <h2>EJERCICIO 5</h2>
     <h3>
-El factorial de un número entero n es una operación matemática que consiste en multiplicar
-todos los factores n x (n-1) x (n-2) x ... x 1. Así, el factorial de 5 (escrito como 5!) es igual a:
-5! = 5 x 4 x 3 x 2 x 1 = 120
-Utilizando la estructura for, crear un script que calcule el factorial de un número entero.</h3>
+El factorial de un número entero n es una operación matemática que consiste en multiplicar todos los factores n x (n-1) x (n-2) x ... x 1. Así, el factorial de 5 (escrito como 5!) es igual a:5! = 5 x 4 x 3 x 2 x 1 = 120 Utilizando la estructura for, crear un script que calcule el factorial de un número entero.</h3>
     <button onclick="EJERCICIO5()">Ejercicio 5 </button>
     <script src="EJERCICIO-5.js"></script>
+
+    <h2>EJERCICIO 6</h2>
+    <h3>
+Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.</h3>
+    <button onclick="EJERCICIO6()">Ejercicio 6 </button>
+    <script src="EJERCICIO-6.js"></script>
+
+    <h2>EJERCICIO 7</h2>
+    <h3>
+Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.</h3>
+    <button onclick="EJERCICIO7()">Ejercicio 7 </button>
+    <script src="EJERCICIO-7.js"></script>
+
+    <h2>EJERCICIO 8</h2>
+    <h3>
+Definir una función que determine si la cadena de texto que se le pasa como parámetro es un palíndromo, es decir, si se lee de la misma forma desde la izquierda y desde la derecha.
+Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural"</h3>
+    <button onclick="EJERCICIO8()">Ejercicio 8 </button>
+    <script src="EJERCICIO-8.js"></script>
+    
+    <h2>EJERCICIO 9</h2>
+    <h3>
+Definir la siguiente jerarquía de objetos, haciendo uso de los prototipos de JavaScript:
+Objeto Persona con las propiedades nombre, edad y género, y el método obtDetalles(), que muestra por pantalla las propiedades de la persona.
+Objeto Estudiante, que hereda de Persona, e incluye las propiedades curso y grupo y el método registrar().
+Objeto Profesor, que hereda de Persona, e incluye las propiedades asignatura y nivel y el método asignar().
+Crear los objetos y casos de prueba necesarios para comprobar el correcto funcionamiento de la jerarquía.</h3>
+    <button onclick="EJERCICIO9()">Ejercicio 9 </button>
+    <script src="EJERCICIO-9.js"></script>
+    
+    <h2>EJERCICIO 10</h2>
+    <h3>
+Escribir un script que simule el lanzamiento de dos dados. Hacer uso de la función Math.random para obtener números aleatorios entre 1 y 6 para cada uno de los lanzamientos de los dados. Sumar el resultado de lanzar dos dados y anotar en un array el número de apariciones de dicha suma, repitiendo 36.000 veces esta operación.</h3>
+    <button onclick="EJERCICIO10()">Lanzar Los Dados (Ejercicio 10) </button>
+    <script src="EJERCICIO-10.js"></script>
 </body>
 </html>
