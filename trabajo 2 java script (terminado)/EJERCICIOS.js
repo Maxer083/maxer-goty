@@ -165,11 +165,55 @@ function EJERCICIO8(params){
 //Objeto Profesor, que hereda de Persona, e incluye las propiedades asignatura y nivel y el método asignar().
 //Crear los objetos y casos de prueba necesarios para comprobar el correcto funcionamiento de la jerarquía.
 
-//AUN NO SE HACE
-
 function EJERCICIO9(params) {
-    
+    let guy = new persona("jose",12,"helicoptero apache")
+    let alumno = new Estudiante("martin",67,"tanque de guerra","4to","15")
+    let profe = new profesor("jorge",41,"masculino","algoritmos","secundario")
+    console.log(guy.obtDetalles());
+    console.log(alumno.registrar());
+    console.log(profe.asignar());   
 }
+
+function persona(nombre, edad, genero){
+        this.nombre = nombre;
+        this.genero = genero;
+        this.edad = edad;
+    }
+
+    persona.prototype.obtDetalles = function(){
+        console.log(`Nombre: ${this.nombre}, Edad: ${this.edad}, Genero: ${this.genero}`);
+    }
+
+
+
+
+    function Estudiante(nombre, edad, genero, curso, grupo){
+        persona.call(this, nombre, edad, genero);
+        this.curso = curso;
+        this.grupo = grupo;
+    }
+
+    Estudiante.prototype = Object.create(persona.prototype);
+    Estudiante.prototype.constructor = Estudiante;
+
+    Estudiante.prototype.registrar = function(){
+        console.log(`${this.nombre} ha sido regitrado en el curso ${this.curso}, grupo ${this.grupo}`);
+    }
+
+
+
+    function profesor(nombre, edad, genero, asignatura, nivel){
+        persona.call(nombre, edad, genero);
+        this.nivel = nivel;
+        this.asignatura = asignatura;
+    }
+
+    profesor.prototype = Object.create(persona.prototype);
+    profesor.prototype.constructor = profesor;
+
+    profesor.prototype.asignar = function(){
+        console.log(`el profesor de la asignatura ${this.asignatura} tiene un nivel de ${this.nivel}`);
+    }
 
 
 //EJERCICIO 10
